@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="crosspare">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/replication-kit-tse-2017-benchmark-master/benchmark-execution/crosspare.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
