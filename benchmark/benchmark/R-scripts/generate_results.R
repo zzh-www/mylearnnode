@@ -23,20 +23,20 @@ TABLES_PATH = "D:\\RSOURECE\\tables\\"
 # If true the plots included in the article are generated    如果为真则生成文章中的所有图
 CREATEPLOTS = FALSE
 
-# Defines wether Friedman-Nemenyi or ANOVA with Scott-Knott clustering is used for ranking  定义 是使用 Friedman-Nemenyi 还是 ANOVA with Scott-Knott clustering 方法进行排序
+# Defines wether Friedman-Nemenyi or ANOVA with Scott-Knott clustering is used for ranking    定义 是使用 Friedman-Nemenyi 还是 ANOVA with Scott-Knott clustering 方法进行排序
 # TRUE = Friedman-Nemenyi, FALSE = Scott-Knott
 NONPARAMETRIC = TRUE
 
-# 1 for fine-grained Nemenyi ranking from the correction
-# Any other number for the three-ranks approach from the original paper
+# 1 for fine-grained Nemenyi ranking from the correction            NONPARAMETRICRANKINGMODE 参数设置为 1 将以改良后的细粒度后续检验排序
+# Any other number for the three-ranks approach from the original paper     其他参数则以原始文章的三种方法排序
 NONPARAMETRICRANKINGMODE = 1
 
-# If true CD charts for Friedman-Nemenyi tests are created
-PRINTCDCHARTS = FALSE
+# If true CD charts for Friedman-Nemenyi tests are created  CD charts 为 Critical Distance Diagram 临界距离图 即意思为设置为TRUE则会创建CD charts
+PRINTCDCHARTS = TRUE
 CD_EXPORT_WIDTH = 10
 
 #################################
-# Install and load dependencies #
+# Install and load dependencies #    下载相应依赖
 #################################
 if (!require("RMySQL")) install.packages("RMySQL")
 if (!require("ScottKnott")) install.packages("ScottKnott")
@@ -56,7 +56,7 @@ library(reshape)
 library(gdata)
 library(stringr)
 
-# We have to increase the number of nested expressions, because the CD diagrams cannot be plotted otherwise
+# We have to increase the number of nested expressions, because the CD diagrams cannot be plotted otherwise         设置堆栈数，不然不够
 options(expressions=10000)
 
 ########################################################

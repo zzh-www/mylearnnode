@@ -6,7 +6,13 @@
 
 参考文章：https://blog.csdn.net/aws3217150/article/details/50479457
 
-​			  https://smartse.github.io/group/%E8%B7%A8%E9%A1%B9%E7%9B%AE%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%BB%BC%E8%BF%B0.pdf
+https://smartse.github.io/group/%E8%B7%A8%E9%A1%B9%E7%9B%AE%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%BB%BC%E8%BF%B0.pdf
+
+http://www.jos.org.cn/ch/reader/download_pdf_file.aspx?journal_id=jos&file_name=88D0BB702E5C1707DA216DE97314F1CF19E0198366EB5D13A92765A2A0FD7E2C8A2B2F1A24D0D3645431361FE2736345&open_type=self&file_no=5604
+
+https://ir.nctu.edu.tw/bitstream/11536/79304/1/680201.pdf
+
+https://zyzypeter.github.io/2017/08/11/machine-learning-ch14-model-evaluate/#friedman%E6%A3%80%E9%AA%8C%E5%92%8Cnemenyi%E5%90%8E%E7%BB%AD%E6%A3%80%E9%AA%8C
 
 
 # 相关名词解释
@@ -405,7 +411,97 @@ CrossPare uses a mark-up style definition of experiments. In the end, it is a qu
 
 
 
-ANOVA with Scott-Knott clustering
+### ANOVA with Scott-Knott clustering
+
+**ScottKnott: a package for performing the Scott-Knott clustering algorithm in R**
+
+https://www.scielo.br/scielo.php?script=sci_arttext&pid=S2179-84512014000100002
+
+![image-20201112213655263](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201112213655263.png)
+
+
+
+![image-20201112215307038](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201112215307038.png)
+
+
+
+
+
+### K-means
+
+https://zh.wikipedia.org/wiki/K-%E5%B9%B3%E5%9D%87%E7%AE%97%E6%B3%95
+
+https://baike.baidu.com/item/K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95/15779627?fromtitle=K-means&fromid=4934806
+
+k均值聚类算法（k-means clustering algorithm）是一种迭代求解的聚类分析算法，其步骤是，预将数据分为K组，则随机选取K个对象作为初始的聚类中心，然后计算每个对象与各个种子聚类中心之间的距离，把每个对象分配给距离它最近的聚类中心。聚类中心以及分配给它们的对象就代表一个[聚类](https://baike.baidu.com/item/聚类/593695)。每分配一个样本，聚类的聚类中心会根据聚类中现有的对象被重新计算。这个过程将不断重复直到满足某个终止条件。终止条件可以是没有（或最小数目）对象被重新分配给不同的聚类，没有（或最小数目）聚类中心再发生变化，[误差](https://baike.baidu.com/item/误差/738024)[平方和](https://baike.baidu.com/item/平方和/783894)局部最小。
+
+
+
+###  Friedman-Nemenyi 
+
+https://www.bookstack.cn/read/Vay-keen-Machine-learning-learning-notes/spilt.1.2.6.md
+
+Friedman 检验
+
+在一组数据集上对多个算法进行比较，当有多个算法参与比较时，一种做法时在每个数据集上分别列出两两比较的结果，另一种方法就是使用基于算法排序的Friedman检验。
+
+
+
+![image-20201113013154440](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113013154440.png)
+
+
+
+然后，使用Friedman检验来判断这些算法是否性能相同。若相同，则它们的平均序值应该相同
+
+
+
+![image-20201113021441493](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113021441493.png)
+
+
+
+
+
+**卡方分布**（**chi-square distribution**[[2\]](https://zh.wikipedia.org/wiki/卡方分佈#cite_note-2), χ²-distribution**，或写作χ²分布**）是[概率论](https://zh.wikipedia.org/wiki/概率论)与[统计学](https://zh.wikipedia.org/wiki/统计学)中常用的一种[概率分布](https://zh.wikipedia.org/wiki/概率分布)。k个[独立](https://zh.wikipedia.org/wiki/統計獨立)的标准[正态分布](https://zh.wikipedia.org/wiki/正态分布)变量的平方和服从[自由度](https://zh.wikipedia.org/wiki/自由度_(统计学))为k的卡方分布。  https://zh.wikipedia.org/wiki/%E5%8D%A1%E6%96%B9%E5%88%86%E4%BD%88
+
+![image-20201113021858847](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113021858847.png)
+
+
+
+![image-20201113022052585](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113022052585.png)
+
+
+
+![image-20201113024921644](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113024921644.png)
+
+
+
+F分布：                                  https://zh.wikipedia.org/wiki/F-%E5%88%86%E5%B8%83
+
+Friedman检验：判断算法是否性能都相同。 检验变量τχ2与F检验的临界值进行比较。
+
+![image-20201113034336365](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113034336365.png)
+
+![image-20201113025613234](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113025613234.png)
+
+
+
+![image-20201113034615051](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113034615051.png)
+
+
+
+
+
+![image-20201113034845150](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113034845150.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -695,11 +791,9 @@ This replication package and CrossPare are licensed under the Apache License, Ve
 
 
 
+NONPARAMETRICRANKINGMODE != 1
 
-
-
-
-
+![image-20201113011953526](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201113011953526.png)
 
 
 
