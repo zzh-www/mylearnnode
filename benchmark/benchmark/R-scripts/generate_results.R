@@ -7,23 +7,23 @@
 # You may change these global variables for different purposes.
 # You should at least check the MySQL configuration below
 
-# MySQL Configuration -
+# MySQL Configuration -   数据库配置
 MYSQL_HOST = "localhost"
 MYSQL_PORT = 3306
 MYSQL_DBNAME = "crosspare"
 MYSQL_USER = "crosspare"
 MYSQL_PASSWORT = "crosspare"
 
-# Path for all generates plots
-PLOT_PATH = "figures/"
+# Path for all generates plots         所有图的储存路径
+PLOT_PATH = "D:\\RSOURECE\\figures\\"
 
-# Path for all generated tables
-TABLES_PATH = "tables/"
+# Path for all generated tables         生成的所有图的储存路径
+TABLES_PATH = "D:\\RSOURECE\\tables\\"
 
-# If true the plots included in the article are generated
+# If true the plots included in the article are generated    如果为真则生成文章中的所有图
 CREATEPLOTS = FALSE
 
-# Defines wether Friedman-Nemenyi or ANOVA with Scott-Knott clustering is used for ranking
+# Defines wether Friedman-Nemenyi or ANOVA with Scott-Knott clustering is used for ranking  定义 是使用 Friedman-Nemenyi 还是 ANOVA with Scott-Knott clustering 方法进行排序
 # TRUE = Friedman-Nemenyi, FALSE = Scott-Knott
 NONPARAMETRIC = TRUE
 

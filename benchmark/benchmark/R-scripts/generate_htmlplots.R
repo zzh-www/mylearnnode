@@ -8,7 +8,8 @@ MYSQL_USER = "crosspare"
 MYSQL_PASSWORT = "crosspare"
 
 # Path for all generates plots
-PLOT_PATH = "html_figures/"
+PLOT_PATH = "D:\\RSOURECE\\html_figures\\"
+#设置为绝对路径
 
 #################################
 # Install and load dependencies #
@@ -98,3 +99,4 @@ for( i in 1:length(metricsDB) ) {
     createHtmlPlot(metricsDB[i], metricsPrint[i], dataset)
   }
 }
+

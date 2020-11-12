@@ -401,6 +401,22 @@ CrossPare uses a mark-up style definition of experiments. In the end, it is a qu
 
 
 
+
+
+
+
+ANOVA with Scott-Knott clustering
+
+
+
+
+
+
+
+
+
+
+
 # 正文学习
 
 
@@ -634,6 +650,12 @@ This replication package and CrossPare are licensed under the Apache License, Ve
 
 
 
+### 我的复现过程:
+
+​			由于原始数据的获得时间过于漫长就不从头实现
+
+1. 按照步骤设置好数据库后运用navigator运行[setup-db.sql](./benchmark/benchmark/sql/setup-db.sql)与 [db-inserts.sql](./benchmark/benchmark/raw-results/db-inserts.sql)  获得原始数据
+2. 下载 [R](http://mirror.bjtu.edu.cn/cran/) 与 [RStudio](https://www.rstudio.com/) 而后运行 [generate_results.R](./benchmark/benchmark/R-scripts/generate_results.R) 脚本 获得以下结果
 
 
 
@@ -641,24 +663,33 @@ This replication package and CrossPare are licensed under the Apache License, Ve
 
 
 
+![image-20201112010128973](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201112010128973.png)
+
+
+
+3. 运行 [generate_htmlplots.R](./benchmark/benchmark/R-scripts/generate_htmlplots.R) 运行之前请将存储路径改为绝对路径并确保文件存在 PLOT_PATH = "D:\\RSOURECE\\html_figures\\"  可以得到一堆 html 文件
+
+
+
+![image-20201112021158530](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201112021158530.png)
 
 
 
 
 
+#### 查看代码[generate_results.R](./benchmark/benchmark/R-scripts/generate_results.R)
+
+​	默认设置NONPARAMETRIC为TRUE 即使用  Friedman-Nemenyi 排序
+
+![image-20201112025015249](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201112025015249.png)
 
 
 
 
 
+更改设置NONPARAMETRIC为FALSE 即使用Scott-Knott聚类方差分析方法 排序
 
-
-
-
-
-
-
-
+![image-20201112024619928](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201112024619928.png)
 
 
 
