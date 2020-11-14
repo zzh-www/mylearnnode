@@ -797,9 +797,36 @@ NONPARAMETRICRANKINGMODE != 1
 
 
 
+evaluateCPDPBenchmark()函数里results表结构:
 
+![image-20201114151048276](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201114151048276.png)
 
+```R
+    for (j in 1:nrow(results)) {
+      # nrow(results)获取results表行数 j便是从1到nrow(results)
+      cnts[cnts$config == results$config[j], ]$count <- cnts[cnts$config == results$config[j], ]$count + 1
+      # 计数作用，记录config出现过多少次显示在count中
+      # SELECT concat(substring(configurationName, 10), '-', classifier) as config, auc, fscore, gscore, mcc FROM resultsView WHERE configurationName LIKE 'JURECZKO-%'轮，本循环结束后的cnts
 
+      #                    config     count
+      # 1                  ALL-DT     29
+
+      # 2                  ALL-LR     29
+      # 3                  ALL-NB     29
+      # 4                 ALL-NET     29
+      # 5                  ALL-RF     29
+      # 6                 ALL-SVM     28
+      # 7            Amasaki15-DT     0
+      # 8            Amasaki15-LR     0
+      # 9            Amasaki15-NB     0
+      results$index[j] <- cnts[cnts$config == results$config[j], ]$count
+      # 表示是同config中第几次出现的
+    }
+```
+
+后results表为
+
+![image-20201114170713260](AComparativeStudytoBenchmarkCross-projectDefect-learn.assets/image-20201114170713260.png)
 
 
 
