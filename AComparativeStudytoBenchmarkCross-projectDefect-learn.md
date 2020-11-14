@@ -4,6 +4,10 @@
 
 机器学习术语 https://developers.google.cn/machine-learning/glossary/?hl=zh-CN
 
+机器学习速成
+
+https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=zh-cn
+
 参考文章：https://blog.csdn.net/aws3217150/article/details/50479457
 
 https://smartse.github.io/group/%E8%B7%A8%E9%A1%B9%E7%9B%AE%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%BB%BC%E8%BF%B0.pdf
@@ -499,7 +503,9 @@ Friedman检验：判断算法是否性能都相同。 检验变量τχ2与F检�
 
 
 
+### classifier（分类器/分类方法）
 
+https://www.jiqizhixin.com/graph/technologies/aaeb1c15-66f2-4822-91bb-b441607f9ecf
 
 
 
