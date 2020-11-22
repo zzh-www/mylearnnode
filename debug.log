@@ -1,0 +1,15 @@
+[1117/190103.140:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[1118/005103.168:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/010603.236:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/012103.300:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/013603.364:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/015103.391:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/020603.405:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/022103.420:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/023603.434:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/025103.438:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/030603.439:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/032103.440:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/033603.442:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/035103.444:ERROR:crash_report_database_win.cc(498)] failed to stat report
+[1118/040603.445:ERROR:crash_report_database_win.cc(498)] failed to stat report

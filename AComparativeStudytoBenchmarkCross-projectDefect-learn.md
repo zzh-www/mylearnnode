@@ -8,9 +8,11 @@
 
 https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=zh-cn
 
-参考文章：https://blog.csdn.net/aws3217150/article/details/50479457
+参考文章：
 
-https://smartse.github.io/group/%E8%B7%A8%E9%A1%B9%E7%9B%AE%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%BB%BC%E8%BF%B0.pdf
+测试标准：https://blog.csdn.net/aws3217150/article/details/50479457
+
+CDPD：https://smartse.github.io/group/%E8%B7%A8%E9%A1%B9%E7%9B%AE%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6%E7%BB%BC%E8%BF%B0.pdf
 
 http://www.jos.org.cn/ch/reader/download_pdf_file.aspx?journal_id=jos&file_name=88D0BB702E5C1707DA216DE97314F1CF19E0198366EB5D13A92765A2A0FD7E2C8A2B2F1A24D0D3645431361FE2736345&open_type=self&file_no=5604
 
